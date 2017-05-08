@@ -1,1 +1,45 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>我的第一个博客</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js">
+  </script>
+<!--   <link rel="stylesheet" href="https://typo.sofi.sh/typo.css"> -->
+  <link rel="stylesheet" href="typo.css">
+  <style>
+  body{
+    padding:16px;
+  }
+  img{
+    max-width:100%
+  }
+  </style>
+</head>
+<body>
+  <div id='content'>
+# 我的第二篇博客
+** 第一周做菜总结**
+    
+__ 参考‘烹饪工艺’和‘下厨房’APP --做法__
+
+大家好，我们从哪里获得Markdown语法。
+
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1493970288&di=5d85af0742bfa8df4e3a5d4dad0e2225&src=http://3w.beva.cn/p/res/876/20140505_15b9504303d5c8c4.jpg" alt="描述文本：狗" >
+  </div>
+    <script>
+      var markdown = ``
+      var htm = marked(markdown)
+      var content = document.getElementById('content');
+      var markdown = content.innerHTML;
+      console.log(markdown);
+      var newHtml = marked(markdown);
+      content.innerHTML=newHtml;
+      console.log(newHtml);
+      
+  </script>
+ 
+</body>
+</html>
